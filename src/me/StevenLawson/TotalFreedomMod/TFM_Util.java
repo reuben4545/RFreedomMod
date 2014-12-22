@@ -72,7 +72,7 @@ public class TFM_Util
     public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "DarthSalamon", "AcidicCyanide", "wild1145", "WickedGamingUK");
     public static final List<String> LFDS = Arrays.asList("omarheshamelamin");
     public static final list<String> SYS = Arrays.asList("jspence73");
-    public static final list<String> CO_OWNERS = Arrays.asList("xXLemonXx");
+    public static final list<String> CO_OWNERS = Arrays.asList("xXLemonXx", "Skull565", "decyj145");
     
     private static final Random RANDOM = new Random();
     public static String DATE_STORAGE_FORMAT = "EEE, d MMM yyyy HH:mm:ss Z";
