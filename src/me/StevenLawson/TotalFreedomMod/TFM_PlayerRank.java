@@ -18,6 +18,7 @@ public enum TFM_PlayerRank
     OWNER("the " + ChatColor.BLUE + "Owner", ChatColor.BLUE + "[Owner]"),
     LFD("the " + ChatColor.DARK_PURPLE + "Lead Forum Developer", ChatColor.DARK_PURPLE + "[LFD]"),
     SYSADMIN("a " + ChatColor.DARK_RED + "System Admin", ChatColor.DARK_RED + "[System Admin]"),
+    CO_OWNER("a " + ChatColor.BLUE + "Co-Owner", ChatColor.BLUE + "[Co-Owner]"),
     CONSOLE("The " + ChatColor.DARK_PURPLE + "Console", ChatColor.DARK_PURPLE + "[Console]");
     private String loginMessage;
     private String prefix;
@@ -75,6 +76,16 @@ public enum TFM_PlayerRank
         if (LFDS.contains(sender.getName()))
         {
             return LFD
+        }
+        
+        if (SYS.contains(sender.getName()))
+        {
+            return SYSADMIN
+        }
+        
+        if (CO_OWNERS.contains(sender.getName()))
+        {
+            return CO_OWNER
         }
 
         final TFM_Admin entry = TFM_AdminList.getEntry((Player) sender);
