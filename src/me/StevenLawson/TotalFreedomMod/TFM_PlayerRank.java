@@ -78,11 +78,6 @@ public enum TFM_PlayerRank
             return LFD
         }
         
-        if (SYS.contains(sender.getName()))
-        {
-            return SYSADMIN
-        }
-        
         if (CO_OWNERS.contains(sender.getName()))
         {
             return CO_OWNER
@@ -96,9 +91,10 @@ public enum TFM_PlayerRank
         {
             if (TFM_ConfigEntry.SERVER_OWNERS.getList().contains(sender.getName()))
             {
-                return OWNER;
+               return OWNER;
             }
-
+            
+            if (TFM_ConfigEntry.SERVER_SYSADMINS.getList().contains(sender.getNamer()))
             if (entry.isSeniorAdmin())
             {
                 rank = SENIOR;
