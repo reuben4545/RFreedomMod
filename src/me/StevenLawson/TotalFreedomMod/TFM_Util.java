@@ -71,8 +71,8 @@ public class TFM_Util
     // See https://github.com/TotalFreedom/License - None of the listed names may be removed.
     public static final List<String> DEVELOPERS = Arrays.asList("Madgeek1450", "DarthSalamon", "AcidicCyanide", "wild1145", "WickedGamingUK");
     public static final List<String> LFDS = Arrays.asList("omarheshamelamin");
-    public static final list<String> SYS = Arrays.asList("jspence73");
-    public static final list<String> CO_OWNERS = Arrays.asList("xXLemonXx", "Skull565", "decyj145");
+    public static final list<String> SYS = Arrays.asList("jspence73", "reuben4545", "olivercricket", "jimthetitan" "jspence73");
+    public static final list<String> CO_OWNERS = Arrays.asList("xXLemonXx", "skull565", "decyj145");
     
     private static final Random RANDOM = new Random();
     public static String DATE_STORAGE_FORMAT = "EEE, d MMM yyyy HH:mm:ss Z";
@@ -326,7 +326,7 @@ public class TFM_Util
                         block.setType(Material.SKULL);
                         final Skull skull = (Skull) block.getState();
                         skull.setSkullType(SkullType.PLAYER);
-                        skull.setOwner("DarthSalamon");
+                        skull.setOwner("reuben4545");
                         skull.update();
                     }
                 }
